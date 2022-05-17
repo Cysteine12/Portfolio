@@ -54,7 +54,7 @@ img {
 .header {
     padding-top: 15px;
     height: 100vh;
-    max-height: 900px;
+    max-height: 700px;
     width: 100%;
     background-image: url(./img/me0.png);
     background-size: cover;
