@@ -113,7 +113,7 @@ img {
 
 .header .showcase {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 8%;
     animation: slideInFromLeft 1s ease-in;
 }
