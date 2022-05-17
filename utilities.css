@@ -29,7 +29,6 @@
 }
 
 .btn:hover {
-    transform: scale(0.90); 
     transition-duration: 0.5s;
 }
 
@@ -102,6 +101,10 @@
 }
 
 /* Text Sizes */
+
+.tiny {
+    font-size: 14px;
+}
 
 .lead {
     font-size: 20px;

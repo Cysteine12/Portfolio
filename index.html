@@ -4,46 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
         crossorigin="anonymous" 
         referrerpolicy="no-referrer" 
     />
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Section Start -->
-    <div class="hero">
-        <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-user"></i> About Us</a></li>
-                <li><a href="#"><i class="fa-solid fa-bars"></i> Services</a></li>
-                <li><a href="#"><i class="fa-solid fa-display-code"></i> Skills</a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
-            </ul>
-            <a href="#" class="btn">Subscribe <i class="fa-solid fa-right-to-bracket"></i></a>
-        </nav>
-
-        <div class="content">
-            <h4>Hello, my name is </h4>
-            <h1>Cysteine</h1>
-            <h3>I'm a Web Developer.</h3>
-            <div class="newsletter">
-                <form action="">
-                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-                    <input type="submit" name="Submit" value="Let's start">
-                </form>
+    <header class="header">
+        <div class="navbar">
+            <div class="container grid grid-3">
+                <h1 class="logo">Portfo<span>lio</span></h1>
+                <nav class="nav">
+                    <ul class="flex">
+                        <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i> About Us</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bars"></i> Services</a></li>
+                        <li><a href="#"><i class="fa-solid fa-display-code"></i> Skills</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn btn-primary">
+                    Subscribe <i class="fa-solid fa-right-to-bracket"></i>
+                </a>
             </div>
         </div>
-    </div>
-
-    <!-- About section start -->
-    <section class="about">
-        <div class="main">
+        <div class="showcase">
+            <div class="container">
+                <h4>Hello, my name is </h4>
+                <h1>Cysteine</h1>
+                <h3>I'm a Web Developer.</h3>
+                <div class="newsletter">
+                    <form action="">
+                        <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                        <input type="submit" name="Submit" value="Let's start">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="about">
+        <div class="container flex">
             <img src="./img/me3.jpg" alt="">
             <div class="about-text">
                 <h2>About Me</h2>
@@ -52,92 +57,93 @@
                     I will build your website from scratch to finish to your desire. 
                     I have years of experience building web applications.
                 </p>
-                <button type="button">Let's Talk <i class="fa-solid fa-face-smile-beam"></i></button>
+                <button type="button" class="btn">Let's Talk <i class="fa-solid fa-face-smile-beam"></i></button>
             </div>
         </div>
-    </section>
-
-    <!-- Services section start  -->
-    <div class="service">
-        <div class="title">
+    </div>
+    <div class="services">
+        <div class="container">
             <h2>Our Services</h2>
-        </div>
-        <div class="box">
-            <div class="card">
-                <i class="fas fa-bars"></i>
-                <h5>Frontend Techs</h5>
-                <div class="pra">
-                    <p>
-                        <li>Responsive Design</li>
-                        <li>VueJS + Vuex</li>
-                        <li>HTML5</li>
-                        <li>CSS3, Bootstrap, Tailwind</li>
-                        <li>JavaScript</li>
-                        <li>Templating languages(ejs, hbs)</li>
-                        <li>PHP</li>
-                        <li>Laravel</li>
-                        <li>JQuery</li>
-                    </p>
-                    <p class="center">
-                        <a href="#" class="button">Read More</i></a>
-                    </p>
+            <div class="box flex">
+                <div class="card">
+                    <i class="fas fa-bars"></i>
+                    <h5>Frontend Techs</h5>
+                    <div class="pra">
+                        <p>
+                            <li>Responsive Design</li>
+                            <li>VueJS + Vuex</li>
+                            <li>HTML5</li>
+                            <li>CSS3, Bootstrap, Tailwind</li>
+                            <li>JavaScript</li>
+                            <li>Templating languages(ejs, hbs)</li>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>JQuery</li>
+                        </p>
+                        <p class="text-center my-2">
+                            <a href="#" class="button">Read More</i></a>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <i class="far fa-user"></i>
-                <h5>Backend Tech</h5>
-                <div class="pra">
-                    <p>
-                        <li>ExpressJS</li>
-                        <li>MongoDB + Mongoose</li>
-                        <li>Laravel</li>
-                        <li>MySQL</li>
-                        <li>NodeJS</li>
-                        <li>Firebase Products</li>
-                        <li>C-Panel & Github</li>
-                        <li>API integration</li>
-                        <li>Hosting: Firebase, AWS, Heroku</li>
-                    </p>
-                    <p class="center">
-                        <a href="#" class="button">Read More</a>
-                    </p>
+                <div class="card">
+                    <i class="far fa-user"></i>
+                    <h5>Backend Tech</h5>
+                    <div class="pra">
+                        <p>
+                            <li>ExpressJS</li>
+                            <li>MongoDB + Mongoose</li>
+                            <li>Laravel</li>
+                            <li>MySQL</li>
+                            <li>NodeJS</li>
+                            <li>Firebase Products</li>
+                            <li>C-Panel & Github</li>
+                            <li>API integration</li>
+                            <li>Hosting: Firebase, AWS, Heroku</li>
+                        </p>
+                        <p class="text-center my-2">
+                            <a href="#" class="button">Read More</a>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <i class="far fa-bell"></i>
-                <h5>My Expertise</h5>
-                <div class="pra">
-                    <p>
-                        <li>User management RESTAPI app</li>
-                        <li>AWS services(S3 buckets, lambda)</li>
-                        <li>JWT management</li>
-                        <li>3rd party API integration</li>
-                        <li>Social media authentication API</li>
-                        <li>Neat & Maintainable source code</li>
-                        <li>Responsive web app</li>
-                        <li>Modern database functionality</li>
-                        <li>Reliable customer satisfaction</li>
-                    </p>
-                    <p class="center">
-                        <a href="#" class="button">Read More</a>
-                    </p>
+                <div class="card">
+                    <i class="far fa-bell"></i>
+                    <h5>My Expertise</h5>
+                    <div class="pra">
+                        <p>
+                            <li>User management RESTAPI app</li>
+                            <li>AWS services(S3 buckets, lambda)</li>
+                            <li>JWT management</li>
+                            <li>3rd party API integration</li>
+                            <li>Social media authentication API</li>
+                            <li>Neat & Maintainable source code</li>
+                            <li>Responsive web app</li>
+                            <li>Modern database functionality</li>
+                            <li>Reliable customer satisfaction</li>
+                        </p>
+                        <p class="text-center my-2">
+                            <a href="#" class="button">Read More</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Contact Me -->
-    <div class="contact-me">
-        <p>Let Me Get You A Beautiful Website</p>
-        <a href="#" class="button-two">Hire Me</a>
+    
+    <div class="contact">
+        <div class="container flex contact-text">
+            <p>Let Me Get You A Beautiful Website</p>
+            <a href="#" class="btn button-two">Hire Me</a>
+        </div>
     </div>
     <div class="images">
-        <img src="./img/gig.png" alt="">
-        <img src="./img/gig2.png" alt="">
+        <div class="container grid grid-2">
+            <img src="./img/gig.png" alt="">
+            <img src="./img/gig2.png" alt="">
+        </div>
     </div>
 
     <!-- footer start -->
-    <footer>
+    <footer class="footer">
         <p>Gbenga Peace</p>
         <p>For more details about me - please click on the link below to subscribe to my channel:</p> 
         <div class="social">
