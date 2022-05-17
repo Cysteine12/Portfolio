@@ -54,7 +54,7 @@ img {
 .header {
     padding-top: 15px;
     height: 100vh;
-    max-height: 700px;
+    max-height: 900px;
     width: 100%;
     background-image: url(./img/me0.png);
     background-size: cover;
@@ -410,7 +410,7 @@ footer p:nth-child(2) {
 
 
 /* Mobile View  */
-@media(max-width: 1000px) {
+@media(max-width: 900px) {
     .header .navbar .grid-3 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -438,7 +438,8 @@ footer p:nth-child(2) {
     }
 
     .header .showcase {
-        top: 35%;
+        margin-top: 100px;
+        left: 20px;
     }
     
     .header .showcase h1 {
@@ -464,6 +465,13 @@ footer p:nth-child(2) {
         display: block;
         overflow: none;
         font-size: 14px;
+    }
+
+    .about .m-auto {
+        margin: auto;
+        display: grid;
+        justify-content: center;
+
     }
     
     .about img {
